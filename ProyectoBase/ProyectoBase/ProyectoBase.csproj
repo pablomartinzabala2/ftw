@@ -107,6 +107,12 @@
     <Compile Include="FrmMenu.Designer.cs">
       <DependentUpon>FrmMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmPartido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPartido.Designer.cs">
+      <DependentUpon>FrmPartido.cs</DependentUpon>
+    </Compile>
     <Compile Include="Principal.cs">
       <SubType>Form</SubType>
     </Compile>
