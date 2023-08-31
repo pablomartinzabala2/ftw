@@ -31,7 +31,6 @@ D:\PROGRAMACION\FT2023GUT\FT WINDOWS\ftw\ProyectoBase\ProyectoBase\obj\x86\Debug
 D:\PROGRAMACION\FT2023GUT\FT WINDOWS\ftw\ProyectoBase\ProyectoBase\obj\x86\Debug\ProyectoBase.pdb
 D:\PROGRAMACION\FT2023GUT\FT WINDOWS\ftw\ProyectoBase\ProyectoBase\bin\Debug\ProyectoBase.exe
 D:\PROGRAMACION\FT2023GUT\FT WINDOWS\ftw\ProyectoBase\ProyectoBase\bin\Debug\ProyectoBase.pdb
-D:\PROGRAMACION\FT2023GUT\FT WINDOWS\ftw\ProyectoBase\ProyectoBase\bin\Debug\Microsoft.ApplicationBlocks.Data.dll
 D:\PROGRAMACION\FT2023GUT\FT WINDOWS\ftw\ProyectoBase\ProyectoBase\obj\x86\Debug\ProyectoBase.FrmAbmBarrio.resources
 D:\PROGRAMACION\FT2023GUT\FT WINDOWS\ftw\ProyectoBase\ProyectoBase\obj\x86\Debug\ProyectoBase.fRMaBMeQUIPO.resources
 D:\PROGRAMACION\FT2023GUT\FT WINDOWS\ftw\ProyectoBase\ProyectoBase\obj\x86\Debug\ProyectoBase.FrmBase.resources
@@ -45,3 +44,8 @@ D:\PROGRAMACION\FT2023GUT\FT WINDOWS\ftw\ProyectoBase\ProyectoBase\obj\x86\Debug
 D:\PROGRAMACION\FT2023GUT\FT WINDOWS\ftw\ProyectoBase\ProyectoBase\obj\x86\Debug\ProyectoBase.csproj.GenerateResource.Cache
 D:\PROGRAMACION\FT2023GUT\FT WINDOWS\ftw\ProyectoBase\ProyectoBase\obj\x86\Debug\ProyectoBase.csprojResolveAssemblyReference.cache
 D:\PROGRAMACION\FT2023GUT\FT WINDOWS\ftw\ProyectoBase\ProyectoBase\obj\x86\Debug\ProyectoBase.FrmPartido.resources
+D:\PROGRAMACION\FT2023GUT\FT WINDOWS\ftw\ProyectoBase\ProyectoBase\obj\x86\Debug\ProyectoBase.FrmTabla.resources
+D:\PROGRAMACION\FT2023GUT\FT WINDOWS\ftw\ProyectoBase\ProyectoBase\bin\Debug\ProyectoBase.exe.config
+D:\PROGRAMACION\FT2023GUT\FT WINDOWS\ftw\ProyectoBase\ProyectoBase\bin\Debug\TablaDLL.dll
+D:\PROGRAMACION\FT2023GUT\FT WINDOWS\ftw\ProyectoBase\ProyectoBase\bin\Debug\TablaDLL.pdb
+D:\PROGRAMACION\FT2023GUT\FT WINDOWS\ftw\ProyectoBase\ProyectoBase\bin\Debug\TablaDLL.xml

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
@@ -10,8 +10,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ProyectoBase</RootNamespace>
     <AssemblyName>ProyectoBase</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
-    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
@@ -23,6 +24,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -32,6 +34,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.ApplicationBlocks.Data">
@@ -47,6 +50,9 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="TablaDLL">
+      <HintPath>..\..\..\..\..\FT2023\TablaDLL\TablaDLL\bin\Debug\TablaDLL.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Clases\cBarrio.cs" />
@@ -58,6 +64,7 @@
     <Compile Include="Clases\cFunciones.cs" />
     <Compile Include="Clases\cItem.cs" />
     <Compile Include="Clases\cMensaje.cs" />
+    <Compile Include="Clases\cTabla.cs" />
     <Compile Include="Clases\cTorneo.cs" />
     <Compile Include="FrmAbmBarrio.cs">
       <SubType>Form</SubType>
@@ -113,6 +120,12 @@
     <Compile Include="FrmPartido.Designer.cs">
       <DependentUpon>FrmPartido.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmTabla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTabla.Designer.cs">
+      <DependentUpon>FrmTabla.cs</DependentUpon>
+    </Compile>
     <Compile Include="Principal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -147,6 +160,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPartido.resx">
       <DependentUpon>FrmPartido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTabla.resx">
+      <DependentUpon>FrmTabla.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Iconos\obj\x86\Debug\Concesionaria.Form1.resources" />
     <EmbeddedResource Include="Iconos\obj\x86\Debug\Concesionaria.FrmAbmAuto.resources" />
@@ -229,7 +245,9 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="app.config" />
     <None Include="Iconos\obj\x86\Debug\DesignTimeResolveAssemblyReferences.cache" />
     <None Include="Iconos\obj\x86\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
     <None Include="Iconos\obj\x86\Debug\GenerateResource.read.1.tlog" />
@@ -248,6 +266,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bin\Debug\ProyectoBase.exe" />
+    <Content Include="bin\Debug\ProyectoBase.pdb" />
     <Content Include="Iconos\add.ico" />
     <Content Include="Iconos\AUTO.png" />
     <Content Include="Iconos\AUTO2.png" />
