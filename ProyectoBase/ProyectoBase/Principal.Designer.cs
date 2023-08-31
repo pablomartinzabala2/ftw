@@ -37,6 +37,7 @@
             this.equipoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.torneoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fixtureToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
@@ -46,7 +47,8 @@
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.BtnCopia = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
-            this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.partidosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cargarResultadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.toolStrip.SuspendLayout();
@@ -55,7 +57,8 @@
             // menuStrip
             // 
             this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.MenuArchivo});
+            this.MenuArchivo,
+            this.partidosToolStripMenuItem});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
             this.menuStrip.Size = new System.Drawing.Size(632, 24);
@@ -79,35 +82,42 @@
             // toolStripSeparator5
             // 
             this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(149, 6);
+            this.toolStripSeparator5.Size = new System.Drawing.Size(108, 6);
             // 
             // barriosToolStripMenuItem
             // 
             this.barriosToolStripMenuItem.Name = "barriosToolStripMenuItem";
-            this.barriosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.barriosToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
             this.barriosToolStripMenuItem.Text = "Barrios";
             this.barriosToolStripMenuItem.Click += new System.EventHandler(this.barriosToolStripMenuItem_Click);
             // 
             // equipoToolStripMenuItem
             // 
             this.equipoToolStripMenuItem.Name = "equipoToolStripMenuItem";
-            this.equipoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.equipoToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
             this.equipoToolStripMenuItem.Text = "Equipo";
             this.equipoToolStripMenuItem.Click += new System.EventHandler(this.equipoToolStripMenuItem_Click);
             // 
             // torneoToolStripMenuItem
             // 
             this.torneoToolStripMenuItem.Name = "torneoToolStripMenuItem";
-            this.torneoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.torneoToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
             this.torneoToolStripMenuItem.Text = "Torneo";
             this.torneoToolStripMenuItem.Click += new System.EventHandler(this.torneoToolStripMenuItem_Click);
             // 
             // fixtureToolStripMenuItem
             // 
             this.fixtureToolStripMenuItem.Name = "fixtureToolStripMenuItem";
-            this.fixtureToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.fixtureToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
             this.fixtureToolStripMenuItem.Text = "Fixture";
             this.fixtureToolStripMenuItem.Click += new System.EventHandler(this.fixtureToolStripMenuItem_Click);
+            // 
+            // menuToolStripMenuItem
+            // 
+            this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
+            this.menuToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
+            this.menuToolStripMenuItem.Text = "Menu";
+            this.menuToolStripMenuItem.Click += new System.EventHandler(this.menuToolStripMenuItem_Click);
             // 
             // statusStrip
             // 
@@ -187,12 +197,20 @@
             this.toolStripButton3.Size = new System.Drawing.Size(36, 36);
             this.toolStripButton3.Text = "Reakuzar Tareas";
             // 
-            // menuToolStripMenuItem
+            // partidosToolStripMenuItem
             // 
-            this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
-            this.menuToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.menuToolStripMenuItem.Text = "Menu";
-            this.menuToolStripMenuItem.Click += new System.EventHandler(this.menuToolStripMenuItem_Click);
+            this.partidosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cargarResultadosToolStripMenuItem});
+            this.partidosToolStripMenuItem.Name = "partidosToolStripMenuItem";
+            this.partidosToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
+            this.partidosToolStripMenuItem.Text = "Partidos";
+            // 
+            // cargarResultadosToolStripMenuItem
+            // 
+            this.cargarResultadosToolStripMenuItem.Name = "cargarResultadosToolStripMenuItem";
+            this.cargarResultadosToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
+            this.cargarResultadosToolStripMenuItem.Text = "Cargar Resultados";
+            this.cargarResultadosToolStripMenuItem.Click += new System.EventHandler(this.cargarResultadosToolStripMenuItem_Click);
             // 
             // Principal
             // 
@@ -238,6 +256,8 @@
         private System.Windows.Forms.ToolStripMenuItem torneoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem fixtureToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem menuToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem partidosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cargarResultadosToolStripMenuItem;
     }
 }
 

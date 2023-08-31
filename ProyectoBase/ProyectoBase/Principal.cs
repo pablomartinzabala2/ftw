@@ -85,5 +85,11 @@ namespace ProyectoBase
             FrmMenu frm = new FrmMenu();
             frm.Show();
         }
+
+        private void cargarResultadosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmPartido frm = new ProyectoBase.FrmPartido();
+            frm.Show();
+        }
     }
 }

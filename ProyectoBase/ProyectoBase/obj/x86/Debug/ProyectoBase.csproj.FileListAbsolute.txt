@@ -44,3 +44,4 @@ D:\PROGRAMACION\FT2023GUT\FT WINDOWS\ftw\ProyectoBase\ProyectoBase\obj\x86\Debug
 D:\PROGRAMACION\FT2023GUT\FT WINDOWS\ftw\ProyectoBase\ProyectoBase\obj\x86\Debug\ProyectoBase.Properties.Resources.resources
 D:\PROGRAMACION\FT2023GUT\FT WINDOWS\ftw\ProyectoBase\ProyectoBase\obj\x86\Debug\ProyectoBase.csproj.GenerateResource.Cache
 D:\PROGRAMACION\FT2023GUT\FT WINDOWS\ftw\ProyectoBase\ProyectoBase\obj\x86\Debug\ProyectoBase.csprojResolveAssemblyReference.cache
+D:\PROGRAMACION\FT2023GUT\FT WINDOWS\ftw\ProyectoBase\ProyectoBase\obj\x86\Debug\ProyectoBase.FrmPartido.resources

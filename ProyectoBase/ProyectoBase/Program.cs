@@ -12,10 +12,10 @@ namespace ProyectoBase
         /// </summary>
         [STAThread]
         static void Main()
-        {
+        {   
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-           //Application.Run(new FrmInicio ());
+          //  Application.Run(new FrmPartido ());
             Application.Run(new Principal());
         }
     }

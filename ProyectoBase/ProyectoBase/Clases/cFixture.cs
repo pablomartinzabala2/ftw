@@ -20,5 +20,18 @@ namespace ProyectoBase.Clases
             sql = sql + ")";
             cDb.ExecutarNonQuery(sql);
         }
+
+        public DataTable GetFixturexFecha(int IdTorneo, int Fecha)
+        {
+            string sql = "";
+            sql = "select f.idpartido, l.equipo,f.gl, v.equipo, f.gv,f.fechaPartido";
+            sql = sql + " from dbo.Fixture f,equipo l,equipo v,torneo t";
+            sql = sql + " where(f.idlocal = l.idequipo)";
+            sql = sql + " and f.idvisitante = v.idequipo";
+            sql = sql + " and f.idtorneo=t.idtorneo";
+            sql = sql + " and f.idtorneo=" + IdTorneo.ToString();
+            sql = sql + " and f.fecha=" + Fecha.ToString();
+            return cDb.ExecuteDataTable(sql);
+        }
     }
 }

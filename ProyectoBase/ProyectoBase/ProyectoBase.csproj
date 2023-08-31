@@ -145,6 +145,9 @@
     <EmbeddedResource Include="FrmMenu.resx">
       <DependentUpon>FrmMenu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmPartido.resx">
+      <DependentUpon>FrmPartido.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Iconos\obj\x86\Debug\Concesionaria.Form1.resources" />
     <EmbeddedResource Include="Iconos\obj\x86\Debug\Concesionaria.FrmAbmAuto.resources" />
     <EmbeddedResource Include="Iconos\obj\x86\Debug\Concesionaria.FrmAbmBanco.resources" />
