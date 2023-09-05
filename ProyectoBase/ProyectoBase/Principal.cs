@@ -91,5 +91,23 @@ namespace ProyectoBase
             FrmPartido frm = new ProyectoBase.FrmPartido();
             frm.Show();
         }
+
+        private void consultarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmTabla frm = new FrmTabla();
+            frm.Show();
+        }
+
+        private void crearToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmFixture frm = new FrmFixture();
+            frm.Show();
+        }
+
+        private void toolStripButton3_Click(object sender, EventArgs e)
+        {
+            FrmTabla frm = new FrmTabla();
+            frm.Show();
+        }
     }
 }
