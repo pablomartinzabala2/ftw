@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnAnularVisitante = new System.Windows.Forms.Button();
             this.btnAnular = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -41,7 +42,7 @@
             this.btnCargarEquipos = new System.Windows.Forms.Button();
             this.Label1 = new System.Windows.Forms.Label();
             this.cmbTorneo = new System.Windows.Forms.ComboBox();
-            this.btnAnularVisitante = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GrillaVisitante)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GrillaLocal)).BeginInit();
@@ -50,6 +51,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.btnAnularVisitante);
             this.groupBox1.Controls.Add(this.btnAnular);
             this.groupBox1.Controls.Add(this.label4);
@@ -70,6 +72,17 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Fixture";
+            // 
+            // btnAnularVisitante
+            // 
+            this.btnAnularVisitante.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAnularVisitante.Location = new System.Drawing.Point(523, 471);
+            this.btnAnularVisitante.Name = "btnAnularVisitante";
+            this.btnAnularVisitante.Size = new System.Drawing.Size(75, 31);
+            this.btnAnularVisitante.TabIndex = 63;
+            this.btnAnularVisitante.Text = "Anular";
+            this.btnAnularVisitante.UseVisualStyleBackColor = true;
+            this.btnAnularVisitante.Click += new System.EventHandler(this.btnAnularVisitante_Click);
             // 
             // btnAnular
             // 
@@ -133,7 +146,7 @@
             // 
             this.txtFecha.Enabled = false;
             this.txtFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFecha.Location = new System.Drawing.Point(436, 23);
+            this.txtFecha.Location = new System.Drawing.Point(523, 21);
             this.txtFecha.Name = "txtFecha";
             this.txtFecha.Size = new System.Drawing.Size(100, 29);
             this.txtFecha.TabIndex = 9;
@@ -194,16 +207,14 @@
             this.cmbTorneo.Size = new System.Drawing.Size(215, 24);
             this.cmbTorneo.TabIndex = 3;
             // 
-            // btnAnularVisitante
+            // label5
             // 
-            this.btnAnularVisitante.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAnularVisitante.Location = new System.Drawing.Point(523, 471);
-            this.btnAnularVisitante.Name = "btnAnularVisitante";
-            this.btnAnularVisitante.Size = new System.Drawing.Size(75, 31);
-            this.btnAnularVisitante.TabIndex = 63;
-            this.btnAnularVisitante.Text = "Anular";
-            this.btnAnularVisitante.UseVisualStyleBackColor = true;
-            this.btnAnularVisitante.Click += new System.EventHandler(this.btnAnularVisitante_Click);
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(438, 26);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(47, 17);
+            this.label5.TabIndex = 64;
+            this.label5.Text = "Fecha";
             // 
             // FrmFixture
             // 
@@ -239,5 +250,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         internal System.Windows.Forms.Button btnAnularVisitante;
+        internal System.Windows.Forms.Label label5;
     }
 }

@@ -212,7 +212,7 @@
             this.Controls.Add(this.Grupo);
             this.Controls.Add(this.BarraBotones);
             this.Name = "fRMaBMeQUIPO";
-            this.Text = "fRMaBMeQUIPO";
+            this.Text = "Formulario de Equipss";
             this.Load += new System.EventHandler(this.fRMaBMeQUIPO_Load);
             this.Grupo.ResumeLayout(false);
             this.Grupo.PerformLayout();

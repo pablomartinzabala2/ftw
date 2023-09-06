@@ -118,6 +118,7 @@
             this.btnparche.TabIndex = 20;
             this.btnparche.Text = "Parche promedios";
             this.btnparche.UseVisualStyleBackColor = true;
+            this.btnparche.Visible = false;
             // 
             // btnTodos
             // 
@@ -215,7 +216,7 @@
             this.ClientSize = new System.Drawing.Size(696, 554);
             this.Controls.Add(this.groupBox1);
             this.Name = "FrmCrearTorneo";
-            this.Text = "FrmCrearTorneo";
+            this.Text = "Formulario para crear Torneo";
             this.Load += new System.EventHandler(this.FrmCrearTorneo_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
