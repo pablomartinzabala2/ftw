@@ -61,7 +61,8 @@ namespace ProyectoBase
             int IdTorneo = Convert.ToInt32(cmbTorneo.SelectedValue);
             int Categoria = GetCategoria(Convert.ToInt32(cmbTorneo.SelectedValue));
             cEquipo equipo = new Clases.cEquipo();
-            DataTable trdo = equipo.GetEquipoxCategoria(Categoria);
+         //   DataTable trdo = equipo.GetEquipoxCategoria(Categoria);
+            DataTable trdo = equipo.GetEquipoxTorneo(IdTorneo);
             int IdEquipo = 0;
             string Nombre = "";
             for (int i = 0; i < trdo.Rows.Count; i++)
@@ -226,6 +227,32 @@ namespace ProyectoBase
                     }
                 }
             }
+        }
+
+        private void btnTodos_Click(object sender, EventArgs e)
+        {
+            cFunciones fun = new cFunciones();
+            tbEquipo.Rows.Clear();
+            int IdTorneo = Convert.ToInt32(cmbTorneo.SelectedValue);
+            int Categoria = GetCategoria(Convert.ToInt32(cmbTorneo.SelectedValue));
+            cEquipo equipo = new Clases.cEquipo();
+               DataTable trdo = equipo.GetEquipoxCategoria(Categoria);
+          //  DataTable trdo = equipo.GetEquipoxTorneo(IdTorneo);
+            int IdEquipo = 0;
+            string Nombre = "";
+            for (int i = 0; i < trdo.Rows.Count; i++)
+            {
+                IdEquipo = Convert.ToInt32(trdo.Rows[i]["IdEquipo"]);
+                Nombre = trdo.Rows[i]["Equipo"].ToString();
+                DataRow r = tbEquipo.NewRow();
+                r[0] = IdEquipo;
+                r[1] = Nombre;
+                tbEquipo.Rows.Add(r);
+            }
+            Grilla.DataSource = tbEquipo;
+            fun.AnchoColumnas(Grilla, "0;100");
+            // Grilla.Columns[0].Visible = false;
+            CargarFecha();
         }
     }
 }

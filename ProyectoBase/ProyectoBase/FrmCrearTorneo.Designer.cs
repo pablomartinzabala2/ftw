@@ -45,6 +45,7 @@
             this.Grilla1 = new System.Windows.Forms.DataGridView();
             this.Label2 = new System.Windows.Forms.Label();
             this.cmbcategoria = new System.Windows.Forms.ComboBox();
+            this.btnAgregar = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Grilla2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Grilla1)).BeginInit();
@@ -52,6 +53,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnAgregar);
             this.groupBox1.Controls.Add(this.btnGuardar);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.txtcantidad);
@@ -112,7 +114,7 @@
             // 
             // btnparche
             // 
-            this.btnparche.Location = new System.Drawing.Point(300, 268);
+            this.btnparche.Location = new System.Drawing.Point(301, 306);
             this.btnparche.Name = "btnparche";
             this.btnparche.Size = new System.Drawing.Size(57, 52);
             this.btnparche.TabIndex = 20;
@@ -122,7 +124,7 @@
             // 
             // btnTodos
             // 
-            this.btnTodos.Location = new System.Drawing.Point(300, 200);
+            this.btnTodos.Location = new System.Drawing.Point(301, 180);
             this.btnTodos.Name = "btnTodos";
             this.btnTodos.Size = new System.Drawing.Size(58, 47);
             this.btnTodos.TabIndex = 19;
@@ -209,6 +211,16 @@
             this.cmbcategoria.Size = new System.Drawing.Size(180, 24);
             this.cmbcategoria.TabIndex = 1;
             // 
+            // btnAgregar
+            // 
+            this.btnAgregar.Location = new System.Drawing.Point(297, 242);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(58, 47);
+            this.btnAgregar.TabIndex = 25;
+            this.btnAgregar.Text = ">";
+            this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
+            // 
             // FrmCrearTorneo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -245,5 +257,6 @@
         internal System.Windows.Forms.DataGridView Grilla1;
         internal System.Windows.Forms.Label Label2;
         private System.Windows.Forms.Button btnGuardar;
+        internal System.Windows.Forms.Button btnAgregar;
     }
 }

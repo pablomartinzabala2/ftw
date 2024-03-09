@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.btnAnularVisitante = new System.Windows.Forms.Button();
             this.btnAnular = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
@@ -42,7 +43,7 @@
             this.btnCargarEquipos = new System.Windows.Forms.Button();
             this.Label1 = new System.Windows.Forms.Label();
             this.cmbTorneo = new System.Windows.Forms.ComboBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.btnTodos = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GrillaVisitante)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GrillaLocal)).BeginInit();
@@ -51,6 +52,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnTodos);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.btnAnularVisitante);
             this.groupBox1.Controls.Add(this.btnAnular);
@@ -72,6 +74,15 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Fixture";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(470, 26);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(47, 17);
+            this.label5.TabIndex = 64;
+            this.label5.Text = "Fecha";
             // 
             // btnAnularVisitante
             // 
@@ -207,14 +218,16 @@
             this.cmbTorneo.Size = new System.Drawing.Size(215, 24);
             this.cmbTorneo.TabIndex = 3;
             // 
-            // label5
+            // btnTodos
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(438, 26);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(47, 17);
-            this.label5.TabIndex = 64;
-            this.label5.Text = "Fecha";
+            this.btnTodos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTodos.Location = new System.Drawing.Point(392, 21);
+            this.btnTodos.Name = "btnTodos";
+            this.btnTodos.Size = new System.Drawing.Size(72, 24);
+            this.btnTodos.TabIndex = 65;
+            this.btnTodos.Text = "Todos";
+            this.btnTodos.UseVisualStyleBackColor = true;
+            this.btnTodos.Click += new System.EventHandler(this.btnTodos_Click);
             // 
             // FrmFixture
             // 
@@ -251,5 +264,6 @@
         private System.Windows.Forms.Label label3;
         internal System.Windows.Forms.Button btnAnularVisitante;
         internal System.Windows.Forms.Label label5;
+        internal System.Windows.Forms.Button btnTodos;
     }
 }

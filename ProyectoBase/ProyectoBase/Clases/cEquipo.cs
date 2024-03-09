@@ -21,5 +21,15 @@ namespace ProyectoBase.Clases
             sql = sql + " order by Equipo ";
             return cDb.ExecuteDataTable(sql);
         }
+
+        public DataTable GetEquipoxTorneo(int IDTorneo)
+        {
+            string sql = "select e.* ";
+            sql = sql + " from Equipo e, EquiposxTorneo et ";
+            sql = sql + " where e.IdEquipo = et.IdEquipo ";
+            sql = sql + " and et.IdTorneo=" + IDTorneo.ToString();
+            sql = sql + " order by Equipo ";
+            return cDb.ExecuteDataTable(sql);
+        }
     }
 }

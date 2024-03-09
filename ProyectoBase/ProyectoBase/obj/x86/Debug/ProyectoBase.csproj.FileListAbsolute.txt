@@ -42,10 +42,12 @@ D:\PROGRAMACION\FT2023GUT\FT WINDOWS\ftw\ProyectoBase\ProyectoBase\obj\x86\Debug
 D:\PROGRAMACION\FT2023GUT\FT WINDOWS\ftw\ProyectoBase\ProyectoBase\obj\x86\Debug\ProyectoBase.Principal.resources
 D:\PROGRAMACION\FT2023GUT\FT WINDOWS\ftw\ProyectoBase\ProyectoBase\obj\x86\Debug\ProyectoBase.Properties.Resources.resources
 D:\PROGRAMACION\FT2023GUT\FT WINDOWS\ftw\ProyectoBase\ProyectoBase\obj\x86\Debug\ProyectoBase.csproj.GenerateResource.Cache
-D:\PROGRAMACION\FT2023GUT\FT WINDOWS\ftw\ProyectoBase\ProyectoBase\obj\x86\Debug\ProyectoBase.csprojResolveAssemblyReference.cache
 D:\PROGRAMACION\FT2023GUT\FT WINDOWS\ftw\ProyectoBase\ProyectoBase\obj\x86\Debug\ProyectoBase.FrmPartido.resources
 D:\PROGRAMACION\FT2023GUT\FT WINDOWS\ftw\ProyectoBase\ProyectoBase\obj\x86\Debug\ProyectoBase.FrmTabla.resources
 D:\PROGRAMACION\FT2023GUT\FT WINDOWS\ftw\ProyectoBase\ProyectoBase\bin\Debug\ProyectoBase.exe.config
 D:\PROGRAMACION\FT2023GUT\FT WINDOWS\ftw\ProyectoBase\ProyectoBase\bin\Debug\TablaDLL.dll
 D:\PROGRAMACION\FT2023GUT\FT WINDOWS\ftw\ProyectoBase\ProyectoBase\bin\Debug\TablaDLL.pdb
 D:\PROGRAMACION\FT2023GUT\FT WINDOWS\ftw\ProyectoBase\ProyectoBase\bin\Debug\TablaDLL.xml
+D:\PROGRAMACION\FT2023GUT\FT WINDOWS\ftw\ProyectoBase\ProyectoBase\obj\x86\Debug\ProyectoBase.csproj.AssemblyReference.cache
+D:\PROGRAMACION\FT2023GUT\FT WINDOWS\ftw\ProyectoBase\ProyectoBase\obj\x86\Debug\ProyectoBase.csproj.CoreCompileInputs.cache
+D:\PROGRAMACION\FT2023GUT\FT WINDOWS\ftw\ProyectoBase\ProyectoBase\obj\x86\Debug\ProyectoBase.csproj.CopyComplete

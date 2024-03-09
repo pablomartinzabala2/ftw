@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using ProyectoBase.Clases;
+using TablaDLL;
+
 namespace ProyectoBase
 {
     public partial class FrmCrearTorneo : FrmBase
@@ -89,6 +91,21 @@ namespace ProyectoBase
             }
             MessageBox.Show("Datos grabados correctamente ");
             txttorneo.Text = "";
+        }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+              
+          //  idequipo = Convert.ToInt32(Grilla1.Rows[i].Cells[0].Value);
+          //  Equipo = Grilla1.Rows[i].Cells[1].Value.ToString();
+            Int32 IdEquipo = Convert.ToInt32(Grilla1.CurrentRow.Cells[0].Value);
+            string Equipo = Grilla1.CurrentRow.Cells[1].Value.ToString();
+            Grilla2.Rows.Add(IdEquipo, Equipo);
+            txtcantidad.Text = (Grilla2.Rows.Count - 1).ToString();
+            // Grilla2.Columns[0].Width = 50;
+            // Grilla2.Columns[1].Width = 150;
+            fun.AnchoColumnas(Grilla2, "0;100");
+            Grilla2.Columns[1].HeaderText = "Equipo";
         }
     }
 }
