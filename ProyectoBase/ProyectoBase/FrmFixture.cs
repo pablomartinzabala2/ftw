@@ -230,7 +230,7 @@ namespace ProyectoBase
         }
 
         private void btnTodos_Click(object sender, EventArgs e)
-        {
+        { //adfd
             cFunciones fun = new cFunciones();
             tbEquipo.Rows.Clear();
             int IdTorneo = Convert.ToInt32(cmbTorneo.SelectedValue);
