@@ -48,6 +48,4 @@ D:\PROGRAMACION\FT2023GUT\FT WINDOWS\ftw\ProyectoBase\ProyectoBase\bin\Debug\Pro
 D:\PROGRAMACION\FT2023GUT\FT WINDOWS\ftw\ProyectoBase\ProyectoBase\bin\Debug\TablaDLL.dll
 D:\PROGRAMACION\FT2023GUT\FT WINDOWS\ftw\ProyectoBase\ProyectoBase\bin\Debug\TablaDLL.pdb
 D:\PROGRAMACION\FT2023GUT\FT WINDOWS\ftw\ProyectoBase\ProyectoBase\bin\Debug\TablaDLL.xml
-D:\PROGRAMACION\FT2023GUT\FT WINDOWS\ftw\ProyectoBase\ProyectoBase\obj\x86\Debug\ProyectoBase.csproj.AssemblyReference.cache
-D:\PROGRAMACION\FT2023GUT\FT WINDOWS\ftw\ProyectoBase\ProyectoBase\obj\x86\Debug\ProyectoBase.csproj.CoreCompileInputs.cache
-D:\PROGRAMACION\FT2023GUT\FT WINDOWS\ftw\ProyectoBase\ProyectoBase\obj\x86\Debug\ProyectoBase.csproj.CopyComplete
+D:\PROGRAMACION\FT2023GUT\FT WINDOWS\ftw\ProyectoBase\ProyectoBase\obj\x86\Debug\ProyectoBase.csprojResolveAssemblyReference.cache

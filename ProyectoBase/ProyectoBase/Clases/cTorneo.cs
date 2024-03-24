@@ -10,11 +10,12 @@ namespace ProyectoBase.Clases
         public Int32 Insertar(string Torneo,int Categoria, string Temporada)
         {
             string sql = "insert into Torneo(";
-            sql = sql + "Torneo,Categoria,Temporada";
+            sql = sql + "Torneo,Categoria,Temporada,Finalizo";
             sql = sql + ")";
             sql = sql + " values (" + "'" + Torneo + "'";
             sql = sql + "," + Categoria.ToString();
             sql = sql + "," + "'" + Temporada + "'";
+            sql = sql + ",'N'";
             sql = sql + ")";
             return cDb.EjecutarEscalar(sql);
         }

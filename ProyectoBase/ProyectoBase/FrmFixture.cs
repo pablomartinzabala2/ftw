@@ -140,11 +140,13 @@ namespace ProyectoBase
 
         private void btnGrabar_Click(object sender, EventArgs e)
         {
+            /*
             if (tbEquipo.Rows.Count >0)
             {
                 MessageBox.Show("Debe seleccionar todos los equipos ");
                 return;
             }
+            */
             cFixture fixture = new cFixture();
             int IdTorneo = 0;
             int Fecha = 0;
@@ -162,6 +164,7 @@ namespace ProyectoBase
 
             if (b ==1)
             {
+                local = 0;
                 MessageBox.Show("Datos grabados correctamente ");
                 CargarFecha();
                 tbEquipo.Rows.Clear();

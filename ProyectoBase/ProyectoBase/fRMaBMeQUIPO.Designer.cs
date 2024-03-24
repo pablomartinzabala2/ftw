@@ -44,12 +44,16 @@
             this.btnAbrir = new System.Windows.Forms.ToolStripButton();
             this.btnImprimir = new System.Windows.Forms.ToolStripButton();
             this.btnSalir = new System.Windows.Forms.ToolStripButton();
+            this.txt_Foto = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.Grupo.SuspendLayout();
             this.BarraBotones.SuspendLayout();
             this.SuspendLayout();
             // 
             // Grupo
             // 
+            this.Grupo.Controls.Add(this.label2);
+            this.Grupo.Controls.Add(this.txt_Foto);
             this.Grupo.Controls.Add(this.cmb_Categoria);
             this.Grupo.Controls.Add(this.label1);
             this.Grupo.Controls.Add(this.txtCodigo);
@@ -67,7 +71,7 @@
             // 
             this.cmb_Categoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmb_Categoria.FormattingEnabled = true;
-            this.cmb_Categoria.Location = new System.Drawing.Point(97, 74);
+            this.cmb_Categoria.Location = new System.Drawing.Point(97, 101);
             this.cmb_Categoria.Name = "cmb_Categoria";
             this.cmb_Categoria.Size = new System.Drawing.Size(287, 24);
             this.cmb_Categoria.TabIndex = 22;
@@ -75,7 +79,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(19, 81);
+            this.label1.Location = new System.Drawing.Point(19, 108);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(69, 17);
             this.label1.TabIndex = 21;
@@ -204,6 +208,22 @@
             this.btnSalir.Text = "Salir";
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
+            // txt_Foto
+            // 
+            this.txt_Foto.Location = new System.Drawing.Point(97, 70);
+            this.txt_Foto.Name = "txt_Foto";
+            this.txt_Foto.Size = new System.Drawing.Size(287, 23);
+            this.txt_Foto.TabIndex = 23;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(19, 70);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(36, 17);
+            this.label2.TabIndex = 24;
+            this.label2.Text = "Foto";
+            // 
             // fRMaBMeQUIPO
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -240,5 +260,7 @@
         private System.Windows.Forms.TextBox txtCodigo;
         private System.Windows.Forms.TextBox txt_Equipo;
         private System.Windows.Forms.Label Nombre;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txt_Foto;
     }
 }
