@@ -1,0 +1,25 @@
+D:\PROGRAMACION\ft\TablaDLL\TablaDLL\bin\Debug\TablaDLL.dll
+D:\PROGRAMACION\ft\TablaDLL\TablaDLL\bin\Debug\TablaDLL.pdb
+D:\PROGRAMACION\ft\TablaDLL\TablaDLL\bin\Debug\TablaDLL.xml
+D:\PROGRAMACION\ft\TablaDLL\TablaDLL\obj\Debug\TablaDLL.Resources.resources
+D:\PROGRAMACION\ft\TablaDLL\TablaDLL\obj\Debug\TablaDLL.vbproj.GenerateResource.Cache
+D:\PROGRAMACION\ft\TablaDLL\TablaDLL\obj\Debug\TablaDLL.dll
+D:\PROGRAMACION\ft\TablaDLL\TablaDLL\obj\Debug\TablaDLL.xml
+D:\PROGRAMACION\ft\TablaDLL\TablaDLL\obj\Debug\TablaDLL.pdb
+D:\PROGRAMACION\FT2023\TablaDLL\TablaDLL\bin\Debug\TablaDLL.dll
+D:\PROGRAMACION\FT2023\TablaDLL\TablaDLL\bin\Debug\TablaDLL.pdb
+D:\PROGRAMACION\FT2023\TablaDLL\TablaDLL\bin\Debug\TablaDLL.xml
+D:\PROGRAMACION\FT2023\TablaDLL\TablaDLL\obj\Debug\TablaDLL.Resources.resources
+D:\PROGRAMACION\FT2023\TablaDLL\TablaDLL\obj\Debug\TablaDLL.vbproj.GenerateResource.Cache
+D:\PROGRAMACION\FT2023\TablaDLL\TablaDLL\obj\Debug\TablaDLL.dll
+D:\PROGRAMACION\FT2023\TablaDLL\TablaDLL\obj\Debug\TablaDLL.xml
+D:\PROGRAMACION\FT2023\TablaDLL\TablaDLL\obj\Debug\TablaDLL.pdb
+D:\PROGRAMACION\FT2023\TablaDLL\TablaDLL\obj\Debug\TablaDLL.vbprojResolveAssemblyReference.cache
+D:\PROGRAMACION\FT2023GUT\FT WINDOWS\ftw\ProyectoBase\TablaDLL\TablaDLL\bin\Debug\TablaDLL.dll
+D:\PROGRAMACION\FT2023GUT\FT WINDOWS\ftw\ProyectoBase\TablaDLL\TablaDLL\bin\Debug\TablaDLL.pdb
+D:\PROGRAMACION\FT2023GUT\FT WINDOWS\ftw\ProyectoBase\TablaDLL\TablaDLL\bin\Debug\TablaDLL.xml
+D:\PROGRAMACION\FT2023GUT\FT WINDOWS\ftw\ProyectoBase\TablaDLL\TablaDLL\obj\Debug\TablaDLL.Resources.resources
+D:\PROGRAMACION\FT2023GUT\FT WINDOWS\ftw\ProyectoBase\TablaDLL\TablaDLL\obj\Debug\TablaDLL.vbproj.GenerateResource.Cache
+D:\PROGRAMACION\FT2023GUT\FT WINDOWS\ftw\ProyectoBase\TablaDLL\TablaDLL\obj\Debug\TablaDLL.dll
+D:\PROGRAMACION\FT2023GUT\FT WINDOWS\ftw\ProyectoBase\TablaDLL\TablaDLL\obj\Debug\TablaDLL.xml
+D:\PROGRAMACION\FT2023GUT\FT WINDOWS\ftw\ProyectoBase\TablaDLL\TablaDLL\obj\Debug\TablaDLL.pdb

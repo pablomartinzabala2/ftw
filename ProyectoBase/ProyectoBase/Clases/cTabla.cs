@@ -16,7 +16,7 @@ namespace ProyectoBase.Clases
             // DataTable trdo = SqlHelper.ExecuteDataset(Cadena, "TablaLocalGet", IdTorneo).Tables[0];
             // return trdo;
             TablaDLL.Tabla obj = new TablaDLL.Tabla();
-            DataView trdo = obj.TablaGral(51);
+            DataView trdo = obj.TablaGral(IdTorneo);
             return trdo;
         }
     }

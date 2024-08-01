@@ -58,7 +58,7 @@ namespace ProyectoBase
             int i = 0;
             int idequipo = 0;
             string Equipo = "";
-            for (i=0;i<Grilla1.Rows.Count-2;i++)
+            for (i=0;i<Grilla1.Rows.Count-1;i++)
             {
                 idequipo = Convert.ToInt32(Grilla1.Rows[i].Cells[0].Value );
                 Equipo = Grilla1.Rows[i].Cells[1].Value.ToString();

@@ -109,5 +109,10 @@ namespace ProyectoBase
             FrmTabla frm = new FrmTabla();
             frm.Show();
         }
+
+        private void toolStripButton2_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

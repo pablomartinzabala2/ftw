@@ -50,8 +50,9 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
-    <Reference Include="TablaDLL">
-      <HintPath>..\..\..\..\..\FT2023\TablaDLL\TablaDLL\bin\Debug\TablaDLL.dll</HintPath>
+    <Reference Include="TablaDLL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\TablaDLL\TablaDLL\bin\Debug\TablaDLL.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
