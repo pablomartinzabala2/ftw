@@ -63,6 +63,7 @@ namespace ProyectoBase
             cEquipo equipo = new Clases.cEquipo();
          //   DataTable trdo = equipo.GetEquipoxCategoria(Categoria);
             DataTable trdo = equipo.GetEquipoxTorneo(IdTorneo);
+            
             int IdEquipo = 0;
             string Nombre = "";
             for (int i = 0; i < trdo.Rows.Count; i++)
@@ -76,6 +77,8 @@ namespace ProyectoBase
             }
             Grilla.DataSource = tbEquipo;
             fun.AnchoColumnas(Grilla, "0;100");
+            DataTable tbTodos = equipo.GetEquipoxCategoria(Categoria);
+            fun.LlenarComboDatatable  (cmbEquipo, tbTodos, "equipo", "IdEquipo");
            // Grilla.Columns[0].Visible = false;
             CargarFecha();
         }
@@ -256,6 +259,45 @@ namespace ProyectoBase
             fun.AnchoColumnas(Grilla, "0;100");
             // Grilla.Columns[0].Visible = false;
             CargarFecha();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            cFunciones fun = new cFunciones();
+            cEquipo eq = new cEquipo();
+            int  IdEquipo = 0;
+            string Equipo = "";
+            IdEquipo = Convert.ToInt32(cmbEquipo.SelectedValue);
+            Equipo = eq.GeNombretEquipoxId(IdEquipo);
+            if (local == 0)
+            {
+                string Val = IdEquipo + ";" + Equipo;
+                tbLocales = fun.AgregarFilas(tbLocales, Val);
+                GrillaLocal.DataSource = tbLocales;
+                fun.AnchoColumnas(GrillaLocal, "0;100");
+
+                local = 1;
+            }
+            else
+            {
+                string Val = IdEquipo + ";" + Equipo;
+                tbVisitantes = fun.AgregarFilas(tbVisitantes, Val);
+                GrillaVisitante.DataSource = tbVisitantes;
+                // GrillaVisitante.Columns[0].Visible = false;
+                fun.AnchoColumnas(GrillaVisitante, "0;100");
+                local = 0;
+            }
+
+            for (int i = 0; i < tbEquipo.Rows.Count; i++)
+            {
+                if (tbEquipo.Rows[i]["IdEquipo"].ToString() == IdEquipo.ToString ())
+                {
+                    tbEquipo.Rows[i].Delete();
+                    tbEquipo.AcceptChanges();
+                    Grilla.DataSource = tbEquipo;
+                }
+            }
+
         }
     }
 }

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnTodos = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.btnAnularVisitante = new System.Windows.Forms.Button();
             this.btnAnular = new System.Windows.Forms.Button();
@@ -43,7 +44,8 @@
             this.btnCargarEquipos = new System.Windows.Forms.Button();
             this.Label1 = new System.Windows.Forms.Label();
             this.cmbTorneo = new System.Windows.Forms.ComboBox();
-            this.btnTodos = new System.Windows.Forms.Button();
+            this.cmbEquipo = new System.Windows.Forms.ComboBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GrillaVisitante)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GrillaLocal)).BeginInit();
@@ -52,6 +54,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.cmbEquipo);
             this.groupBox1.Controls.Add(this.btnTodos);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.btnAnularVisitante);
@@ -68,12 +72,23 @@
             this.groupBox1.Controls.Add(this.Label1);
             this.groupBox1.Controls.Add(this.cmbTorneo);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Location = new System.Drawing.Point(12, 3);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(731, 508);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Fixture";
+            // 
+            // btnTodos
+            // 
+            this.btnTodos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTodos.Location = new System.Drawing.Point(392, 21);
+            this.btnTodos.Name = "btnTodos";
+            this.btnTodos.Size = new System.Drawing.Size(72, 24);
+            this.btnTodos.TabIndex = 65;
+            this.btnTodos.Text = "Todos";
+            this.btnTodos.UseVisualStyleBackColor = true;
+            this.btnTodos.Click += new System.EventHandler(this.btnTodos_Click);
             // 
             // label5
             // 
@@ -191,7 +206,7 @@
             // btnCargarEquipos
             // 
             this.btnCargarEquipos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCargarEquipos.Location = new System.Drawing.Point(300, 22);
+            this.btnCargarEquipos.Location = new System.Drawing.Point(300, 15);
             this.btnCargarEquipos.Name = "btnCargarEquipos";
             this.btnCargarEquipos.Size = new System.Drawing.Size(75, 24);
             this.btnCargarEquipos.TabIndex = 5;
@@ -213,21 +228,31 @@
             this.cmbTorneo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbTorneo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbTorneo.FormattingEnabled = true;
-            this.cmbTorneo.Location = new System.Drawing.Point(79, 21);
+            this.cmbTorneo.Location = new System.Drawing.Point(79, 15);
             this.cmbTorneo.Name = "cmbTorneo";
             this.cmbTorneo.Size = new System.Drawing.Size(215, 24);
             this.cmbTorneo.TabIndex = 3;
             // 
-            // btnTodos
+            // cmbEquipo
             // 
-            this.btnTodos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTodos.Location = new System.Drawing.Point(392, 21);
-            this.btnTodos.Name = "btnTodos";
-            this.btnTodos.Size = new System.Drawing.Size(72, 24);
-            this.btnTodos.TabIndex = 65;
-            this.btnTodos.Text = "Todos";
-            this.btnTodos.UseVisualStyleBackColor = true;
-            this.btnTodos.Click += new System.EventHandler(this.btnTodos_Click);
+            this.cmbEquipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbEquipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbEquipo.FormattingEnabled = true;
+            this.cmbEquipo.Location = new System.Drawing.Point(79, 37);
+            this.cmbEquipo.Name = "cmbEquipo";
+            this.cmbEquipo.Size = new System.Drawing.Size(215, 24);
+            this.cmbEquipo.TabIndex = 66;
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(300, 37);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 24);
+            this.button1.TabIndex = 67;
+            this.button1.Text = "Agregar";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // FrmFixture
             // 
@@ -265,5 +290,7 @@
         internal System.Windows.Forms.Button btnAnularVisitante;
         internal System.Windows.Forms.Label label5;
         internal System.Windows.Forms.Button btnTodos;
+        internal System.Windows.Forms.ComboBox cmbEquipo;
+        internal System.Windows.Forms.Button button1;
     }
 }

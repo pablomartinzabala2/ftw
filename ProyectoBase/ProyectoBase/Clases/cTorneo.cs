@@ -20,12 +20,16 @@ namespace ProyectoBase.Clases
             return cDb.EjecutarEscalar(sql);
         }
 
-        public void InsertarEquipoxTroeno(int IdEquipo,int IdTorneo)
+        public void InsertarEquipoxTroeno(int IdEquipo,int IdTorneo, int? Zona)
         {
             string sql = "insert into EquiposxTorneo(";
-            sql = sql + "IdEquipo,IdTorneo)";
+            sql = sql + "IdEquipo,IdTorneo,Zona)";
             sql = sql + " Values(" + IdEquipo.ToString();
             sql = sql + "," + IdTorneo.ToString();
+            if (Zona != null)
+                sql = sql + "," + Zona.ToString();
+            else
+                sql = sql + ",null";
             sql = sql + ")";
             cDb.ExecutarNonQuery(sql);
         }

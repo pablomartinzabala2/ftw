@@ -22,6 +22,11 @@ namespace ProyectoBase
         private void Inicializar()
         {
             fun.LlenarCombo(cmbcategoria, "Categoria", "Descripcion", "IdCategoria");
+            //cargamos la zona
+            DataTable tbZona = fun.CrearTabla("CodZona;Nombre");
+            tbZona = fun.AgregarFilas(tbZona, "1;1");
+            tbZona = fun.AgregarFilas(tbZona, "2;2");
+            fun.LlenarComboDatatable(cmbZona, tbZona, "Nombre", "CodZona");
         }
 
         private void FrmCrearTorneo_Load(object sender, EventArgs e)
@@ -57,12 +62,15 @@ namespace ProyectoBase
             cFunciones fun = new cFunciones();
             int i = 0;
             int idequipo = 0;
+            int Zona = 0;
             string Equipo = "";
+            if (cmbZona.SelectedIndex > 0)
+                Zona = Convert.ToInt32(cmbZona.SelectedValue);
             for (i=0;i<Grilla1.Rows.Count-1;i++)
             {
                 idequipo = Convert.ToInt32(Grilla1.Rows[i].Cells[0].Value );
                 Equipo = Grilla1.Rows[i].Cells[1].Value.ToString();
-                Grilla2.Rows.Add(idequipo, Equipo);
+                Grilla2.Rows.Add(idequipo, Equipo, Zona);
             } 
             txtcantidad.Text = (Grilla2.Rows.Count - 1).ToString();
             // Grilla2.Columns[0].Width = 50;
@@ -84,10 +92,21 @@ namespace ProyectoBase
             string Temporada = txttemporada.Text;
             int IdTorneo = Torneo.Insertar(NombreTorneo, IdCategoria, Temporada);
             int IdEquipo = 0;
+            int? Zona = null;
+            int zn = 0;
             for (int i=0;i<Grilla2.Rows.Count-1;i++)
             {
                 IdEquipo = Convert.ToInt32(Grilla2.Rows[i].Cells[0].Value);
-                Torneo.InsertarEquipoxTroeno(IdEquipo, IdTorneo);
+                zn = Convert.ToInt32(Grilla2.Rows[i].Cells[2].Value);
+                if (zn ==0)
+                {
+                    Zona = null;
+                }
+                else
+                {
+                    Zona = zn;
+                }
+                Torneo.InsertarEquipoxTroeno(IdEquipo, IdTorneo, Zona);
             }
             MessageBox.Show("Datos grabados correctamente ");
             txttorneo.Text = "";
@@ -100,7 +119,11 @@ namespace ProyectoBase
           //  Equipo = Grilla1.Rows[i].Cells[1].Value.ToString();
             Int32 IdEquipo = Convert.ToInt32(Grilla1.CurrentRow.Cells[0].Value);
             string Equipo = Grilla1.CurrentRow.Cells[1].Value.ToString();
-            Grilla2.Rows.Add(IdEquipo, Equipo);
+            int Zona = 0;
+            if (cmbZona.SelectedIndex > 0)
+                Zona = Convert.ToInt32(cmbZona.SelectedValue);
+
+            Grilla2.Rows.Add(IdEquipo, Equipo, Zona);
             txtcantidad.Text = (Grilla2.Rows.Count - 1).ToString();
             // Grilla2.Columns[0].Width = 50;
             // Grilla2.Columns[1].Width = 150;

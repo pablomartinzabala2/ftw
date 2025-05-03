@@ -31,5 +31,18 @@ namespace ProyectoBase.Clases
             sql = sql + " order by Equipo ";
             return cDb.ExecuteDataTable(sql);
         }
+
+        public string GeNombretEquipoxId(int IdEquipo)
+        {
+            string Nombre = "";
+            string sql = "select equipo from equipo ";
+            sql = sql + " where IdEquipo=" + IdEquipo.ToString();
+            DataTable trdo = cDb.ExecuteDataTable(sql);
+            if (trdo.Rows.Count >0)
+            {
+                Nombre = trdo.Rows[0]["Equipo"].ToString(); 
+            }
+            return Nombre;
+        }
     }
 }

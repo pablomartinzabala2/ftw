@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.cmbZona = new System.Windows.Forms.ComboBox();
+            this.btnAgregar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.txtcantidad = new System.Windows.Forms.TextBox();
@@ -36,8 +39,6 @@
             this.btnparche = new System.Windows.Forms.Button();
             this.btnTodos = new System.Windows.Forms.Button();
             this.Grilla2 = new System.Windows.Forms.DataGridView();
-            this.IdEquipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Equipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txttorneo = new System.Windows.Forms.TextBox();
@@ -45,7 +46,9 @@
             this.Grilla1 = new System.Windows.Forms.DataGridView();
             this.Label2 = new System.Windows.Forms.Label();
             this.cmbcategoria = new System.Windows.Forms.ComboBox();
-            this.btnAgregar = new System.Windows.Forms.Button();
+            this.IdEquipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Grilla2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Grilla1)).BeginInit();
@@ -53,6 +56,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label5);
+            this.groupBox1.Controls.Add(this.cmbZona);
             this.groupBox1.Controls.Add(this.btnAgregar);
             this.groupBox1.Controls.Add(this.btnGuardar);
             this.groupBox1.Controls.Add(this.label4);
@@ -71,10 +76,38 @@
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(653, 530);
+            this.groupBox1.Size = new System.Drawing.Size(727, 530);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Información del torneo";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(374, 34);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(41, 17);
+            this.label5.TabIndex = 27;
+            this.label5.Text = "Zona";
+            // 
+            // cmbZona
+            // 
+            this.cmbZona.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbZona.FormattingEnabled = true;
+            this.cmbZona.Location = new System.Drawing.Point(444, 34);
+            this.cmbZona.Name = "cmbZona";
+            this.cmbZona.Size = new System.Drawing.Size(99, 24);
+            this.cmbZona.TabIndex = 26;
+            // 
+            // btnAgregar
+            // 
+            this.btnAgregar.Location = new System.Drawing.Point(297, 242);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(58, 47);
+            this.btnAgregar.TabIndex = 25;
+            this.btnAgregar.Text = ">";
+            this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // btnGuardar
             // 
@@ -137,21 +170,12 @@
             this.Grilla2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.Grilla2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.IdEquipo,
-            this.Equipo});
+            this.Column1,
+            this.Column2});
             this.Grilla2.Location = new System.Drawing.Point(383, 123);
             this.Grilla2.Name = "Grilla2";
-            this.Grilla2.Size = new System.Drawing.Size(237, 353);
+            this.Grilla2.Size = new System.Drawing.Size(344, 353);
             this.Grilla2.TabIndex = 18;
-            // 
-            // IdEquipo
-            // 
-            this.IdEquipo.HeaderText = "Column1";
-            this.IdEquipo.Name = "IdEquipo";
-            // 
-            // Equipo
-            // 
-            this.Equipo.HeaderText = "Column1";
-            this.Equipo.Name = "Equipo";
             // 
             // Label3
             // 
@@ -211,21 +235,26 @@
             this.cmbcategoria.Size = new System.Drawing.Size(180, 24);
             this.cmbcategoria.TabIndex = 1;
             // 
-            // btnAgregar
+            // IdEquipo
             // 
-            this.btnAgregar.Location = new System.Drawing.Point(297, 242);
-            this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(58, 47);
-            this.btnAgregar.TabIndex = 25;
-            this.btnAgregar.Text = ">";
-            this.btnAgregar.UseVisualStyleBackColor = true;
-            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
+            this.IdEquipo.HeaderText = "Column1";
+            this.IdEquipo.Name = "IdEquipo";
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Column1";
+            this.Column1.Name = "Column1";
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Column2";
+            this.Column2.Name = "Column2";
             // 
             // FrmCrearTorneo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(696, 554);
+            this.ClientSize = new System.Drawing.Size(767, 554);
             this.Controls.Add(this.groupBox1);
             this.Name = "FrmCrearTorneo";
             this.Text = "Formulario para crear Torneo";
@@ -248,8 +277,6 @@
         internal System.Windows.Forms.Button btnparche;
         internal System.Windows.Forms.Button btnTodos;
         internal System.Windows.Forms.DataGridView Grilla2;
-        internal System.Windows.Forms.DataGridViewTextBoxColumn IdEquipo;
-        internal System.Windows.Forms.DataGridViewTextBoxColumn Equipo;
         internal System.Windows.Forms.Label Label3;
         internal System.Windows.Forms.Label label1;
         internal System.Windows.Forms.TextBox txttorneo;
@@ -258,5 +285,10 @@
         internal System.Windows.Forms.Label Label2;
         private System.Windows.Forms.Button btnGuardar;
         internal System.Windows.Forms.Button btnAgregar;
+        internal System.Windows.Forms.Label label5;
+        internal System.Windows.Forms.ComboBox cmbZona;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IdEquipo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
     }
 }
